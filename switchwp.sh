@@ -3,6 +3,11 @@
 version=$1
 site=$2
 
+if [ "$version" == "" ]; then
+	echo "You didn't enter a version. Adios"
+	exit 0;
+fi
+
 if [ "$site" == "" ]; then
 	site="yolanda"
 fi
